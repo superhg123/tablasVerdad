@@ -25,6 +25,14 @@ public class Compuesta implements Proposicion{
         this.operador = operador;
     }
 
+    public Compuesta(Proposicion elemento1, boolean negacion1, Proposicion elemento2, char negacion2, char operador) {
+        this.elemento1 = elemento1;
+        this.negacion1 = negacion1;
+        this.elemento2 = elemento2;
+        this.negacion2 = (negacion2 == '\u00AC');
+        this.operador = operador;
+    }
+
     @Override
     public List<Boolean> valoresDeVerdad() {
         List<Boolean> valores1 = elemento1.valoresDeVerdad();
