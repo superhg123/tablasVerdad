@@ -1,7 +1,7 @@
 import java.util.List;
 import java.util.Scanner;
 
-public class Main {
+public class TablasVerdad {
     public static void main(String[] args) {
         System.out.println("Bienvenido al programa");
         String prop1 = "1.- A:= [(_ p _ _ q) _ (_ p _ s)] _ (s _ q)";

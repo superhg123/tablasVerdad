@@ -7,6 +7,7 @@ public class Compuesta implements Proposicion{
     private Proposicion elemento2;
     private boolean negacion2;
     private char operador;
+    private boolean negacionGeneral;
     private ArrayList<Boolean> valoresVdd = new ArrayList<>();
 
     public Compuesta(Proposicion elemento1, boolean negacion1, Proposicion elemento2, boolean negacion2, char operador) {
@@ -33,6 +34,7 @@ public class Compuesta implements Proposicion{
         this.operador = operador;
     }
 
+
     @Override
     public List<Boolean> valoresDeVerdad() {
         List<Boolean> valores1 = elemento1.valoresDeVerdad();
@@ -58,6 +60,7 @@ public class Compuesta implements Proposicion{
                     break;
             }
         }
+
         return valoresVdd;
     }
 

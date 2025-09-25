@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="truth-tables:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/truth_tables_jar</output-path>
+    <root id="archive" name="truth-tables.jar">
+      <element id="module-output" name="truth-tables" />
+    </root>
+  </artifact>
+</component>
